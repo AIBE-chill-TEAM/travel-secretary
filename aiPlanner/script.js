@@ -41,20 +41,6 @@ async function getDBDataByUserId(user_id) {
   }
 }
 
-// id로 조회
-async function getDBDataById(id) {
-  const { data, error } = await supabase
-    .from(tableName)
-    .select("*")
-    .eq("id", id);
-
-  if (error) {
-    console.error("❌ 데이터 조회 실패:", error);
-  } else {
-    console.log("✅ 데이터 조회 성공:", data);
-  }
-}
-
 // 로그인된 id 조회
 async function getId() {
   const { data, error } = await supabase.auth.getUser(); // 로그인된 유저 정보 가져오기
