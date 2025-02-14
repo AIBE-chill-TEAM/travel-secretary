@@ -1,7 +1,5 @@
 /* board.css */
 
-
-
 .write-form .card {
   border-radius: 15px; /* Card 둥글게 */
 }
@@ -33,3 +31,5 @@
 .write-form textarea {
   resize: vertical; /* textarea 높이만 리사이즈 가능하도록 */
 }
+
+/* ... */
